@@ -1,0 +1,186 @@
+const fs = require('fs');
+const path = require('path');
+
+const outDir = '/Users/money/.openclaw/workspace/CLIENTS/01_LEADS/BATCH_2026-04-19';
+const csvPath = path.join(outDir, 'prospects.csv');
+const summaryPath = path.join(outDir, 'summary.md');
+
+const SRC = {
+  v2: 'https://ca.linkedin.com/company/defedis-food-distributors-inc. ; https://www.allbiz.ca/fr/defedis-450-681-9500 ; https://www.canpages.ca/page/fr/QC/laval/distributeurs-daliments-defedis-inc/487648',
+  planA: 'https://planaexperts.ca/contact/ ; https://www.genie-inc.com/compagnie/357/plan-a-experts-conseils ; https://www.pagesjaunes.ca/bus/Quebec/Montreal/Plan-A-Experts-conseils/101925133.html',
+  jpm: 'https://www.profilecanada.com/companydetail.cfm?company=807302_JPM_Consultant_Inc_Longueuil_QC ; https://forumrefrigeration.org/csa-b52-2023-changements-et-nouveautes/ ; https://ca.linkedin.com/in/jpmorin-ing-p-eng-cmvp/en',
+  ghoche: 'https://www.ghochearchitecte.com/ ; https://www.ghochearchitecte.com/la-firme/ ; https://www.magazineligne.ca/post/ghoche-architecte',
+  jutras: 'https://www.allbiz.ca/fr/jutras-architecture-450-441-1133 ; https://www.canpages.ca/page/QC/brossard/jutras-architecture-inc/8092436',
+  futura: 'https://portesetfenetresfutura.ca/ ; https://portesetfenetresfutura.ca/formulaire-usine/ ; https://www.pagesjaunes.ca/bus/Quebec/Laval/Futura-Manufacturier-Portes-et-Fenetres/100567667.html',
+  digital: 'https://clutch.co/ca/agencies/digital-marketing/montreal',
+  accounting: 'https://clutch.co/ca/accounting/montreal',
+  webqc: 'https://clutch.co/ca/web-developers/quebec',
+  designqc: 'https://clutch.co/ca/agencies/design/quebec',
+  mylittlebigweb: 'https://mylittlebigweb.com/ ; https://mylittlebigweb.com/en/about-us/ ; https://mylittlebigweb.com/en/about-us/the-little-big-team/',
+  growthhacker: 'https://www.growth-hacker.ca/ ; https://www.growth-hacker.ca/about-us',
+  momentumm: 'https://www.momentumm.co/en/about-us ; https://ca.linkedin.com/company/momentumm-digital ; https://www.allbiz.ca/momentumm-digital-514-647-9961',
+  webtmize: 'https://www.webtmize.com/en/about ; https://www.webtmize.com/en/our-team-panini-card ; https://ca.linkedin.com/company/webtmize',
+  inbeat: 'https://growjo.com/company/inBeat_Agency ; https://ca.linkedin.com/company/inbeat-agency ; https://inbeat.agency/office-information',
+  social55: 'https://social9.com/social-media-marketing/social-media-55 ; https://socialmedia55.com/ ; https://clutch.co/ca/agencies/digital-marketing/montreal',
+  casa: 'https://casamedia.com/agency/ ; https://casamedia.com/ ; https://wellfound.com/company/welcomecasa/people',
+  courimo: 'https://courimo.com/ ; https://courimo.com/about-us/',
+  upearance: 'https://upearance.com/about-us/ ; https://upearance.com/upearance/ ; https://ca.linkedin.com/company/upearance-marketing-solutions',
+  skille: 'https://www.skille.co/ ; https://www.skille.co/email-marketing-agency ; https://www.cbinsights.com/company/skille/people',
+  zenbooks: 'https://zenbooks.ca/who-we-are/ ; https://www.goodfirms.co/company/zenbooks'
+};
+
+const rows = [
+  ['Defedis Food Distributors Inc.','http://www.defedis.com','755 Autoroute Chomedey Ouest, Laval, QC H7W 5N4','11-50','Distribution alimentaire / grossiste','Milton Antypas','À vérifier','info@defedis.com','450-681-9500','8.7','Unifier ventes, achats, inventaire, service client et finance dans une opération B2B récurrente.','Catalogue large, commandes récurrentes et vraie complexité logistique PME.',SRC.v2],
+  ['Plan A Experts-conseils','https://planaexperts.ca','565, Grand Boulevard, L\'Île-Perrot, QC J7V 4X4','11-50','Génie-conseil / services professionnels','Hans-Gabriel Christophe','À vérifier','info@planaexperts.ca','514-612-2234','8.4','CRM + projets + feuilles de temps + facturation pour une firme qui gère appels d\'offres, équipes et chantier.','Cabinet multidisciplinaire avec friction inter-équipes probable et accès décideur encore réaliste.',SRC.planA],
+  ['JPM Consultant Inc.','http://jpmconsultant.com/index.html','347 Rue Saint-Charles O bureau 210, Longueuil, QC J4H 1E7','2-10','Génie-conseil / efficacité énergétique / réfrigération industrielle','Jean-Philippe Morin','https://ca.linkedin.com/in/jpmorin-ing-p-eng-cmvp/en','À vérifier','438-495-2389','8.2','Pipeline, mandats, temps, coordination technique et facturation dans une structure légère.','Dirigeant visible, structure boutique et cycle de mandats clair.',SRC.jpm],
+  ['GHOCHE Architecte','https://www.ghochearchitecte.com','9880 rue Clark, #200, Montréal, QC H3L 2R3','2-10','Architecture / design','Rita Ghoche','À vérifier','info@ghochearchitecte.com','514-895-1450','8.0','Centraliser prospects, mandats, banques d\'heures, suivi chantier, changements et facturation.','Cabinet boutique avec décideuse identifiée et logique projet nette.',SRC.ghoche],
+  ['Futura Manufacturier Portes et Fenêtres','https://portesetfenetresfutura.ca','366 boul. des Laurentides, Laval, QC H7G 2T8','10-49','Manufacturier portes et fenêtres / distribution / installation','Doris Lemieux','À vérifier','À vérifier','450-669-0204','7.8','Structurer devis, commandes, achats, stock, installation et SAV dans une opération multi-sites.','Usine + points de vente + installation = cas Odoo concret. Contact public trouvé, rôle décisionnel exact à confirmer.',SRC.futura + ' ; https://www.trouverunentrepreneur.com/profile/quebec/futura-manufacturier-de-portes-et-fenetres-inc'],
+  ['Jutras Architecture Inc.','À vérifier','6705 boul. Chevrier, bureau 201, Brossard, QC J4Z 3T9','2-10','Architecture','Eric Jutras','À vérifier','ejutras@jutrasarch.com','450-443-4434','7.7','Structurer acquisition, projets, temps, soumissions et facturation sans lourdeur ERP.','Petit cabinet, contact direct identifié et fit pack rapide.',SRC.jutras],
+  ['Momentumm Digital','https://momentumm.co','4035 Rue Saint-Ambroise #405, Montréal, QC H4C 2E1','10-49','Agence marketing / HubSpot / CRM','Anthony Guilhem','À vérifier','anthony@momentumm.co','514-647-9961','7.9','Bon angle CRM + marketing + delivery + facturation pour une agence déjà sensible aux outils CRM/SI.','Croissance d\'agence, offre CRM/HubSpot et décideur public.',SRC.momentumm],
+  ['Webtmize','https://www.webtmize.com/','282 Rue Saint-Zotique O, Montréal, QC H2V 1A3','11-50','Agence performance marketing','Abdo Mazloum','À vérifier','info@webtmize.com','514-665-7537','7.8','Unifier acquisition, exécution, reporting, ops et finance dans une agence performance en croissance.','Fondateur public, équipe 11-50 et plusieurs expertises sous un même toit.',SRC.webtmize],
+  ['Growth Hacker','https://www.growth-hacker.ca','3460 Redpath St, Montreal, QC H3G 2G3','10-49','Agence SEO / CRO / web','Khalil El-Khoury','À vérifier','hello@growth-hacker.ca','514-699-4141','7.8','Odoo peut unifier CRM, pipeline, projets, temps et facturation d\'agence experte.','Agence fondée en 2016, fondateur visible et offre orientée résultats.',SRC.growthhacker],
+  ['My Little Big Web','https://mylittlebigweb.com','3740 Rue Ontario E, Montréal, QC H1W 1S2','10-49','Agence web / marketing numérique','Eugénie Delhaye','À vérifier','contact@mylittlebigweb.com','514-572-7758','7.7','Positionner Odoo comme colonne vertébrale de l\'agence: leads, projets, tickets, achats et finances.','30 collaborateurs, agence établie et cofonda(trice/teur)s visibles publiquement.',SRC.mylittlebigweb],
+  ['Casa Media','https://casamedia.com','Montréal, QC','10-49','Agence marketing / web / SEO','Dorian Reeves','À vérifier','À vérifier','À vérifier','7.7','Agence créative avec paid, web et social: bon angle CRM + delivery + facturation + suivi de comptes.','Fondateur public et offre multi-services avec récurrence potentielle.',SRC.casa],
+  ['Zenbooks','https://zenbooks.ca','Montréal / Ottawa','10-49','Services comptables / services professionnels','Eric Saumure','À vérifier','info@zenbooks.ca','833-936-5433','7.6','Back-office financier et opérations internes: CRM, ventes, projets, RH et automatisations pour une firme de services.','Cabinet cloud en croissance, tech-forward, orienté PME.',SRC.zenbooks],
+  ['Social Media 55','https://socialmedia55.com','1200 Avenue McGill College #1100, Montréal, QC','10-49','Agence marketing numérique','Joseph Rothstein','À vérifier','info@socialmedia55.com','1-844-633-4255','7.5','Centraliser CRM, gestion des mandats, ventes récurrentes et reporting dans une seule stack.','Fondateur public et forte logique de récurrence client.',SRC.social55],
+  ['inBeat Agency','http://inbeat.agency','51 Rue Sherbrooke O #204, Montréal, QC H2X 1X2','50-249','Agence influence / UGC / performance','David Morneau','À vérifier','hello@inbeat.agency','833-800-1506','7.4','Si segment PME ou BU locale autonome: structurer new biz, delivery créatif et facturation projet.','Croissance rapide et cofondateur/CEO public.',SRC.inbeat],
+  ['Courimo','https://courimo.com','Montréal, QC','10-49','Agence marketing numérique','Josh Bilerman','https://ca.linkedin.com/in/joshbilerman','À vérifier','438-900-4008','7.3','Angle agence locale: CRM + projets + temps + facturation avec meilleure visibilité de pipeline.','Bonne densité d\'offres digitales et taille sweet spot. Décideur public visible comme partner.',SRC.courimo + ' ; https://www.signalhire.com/companies/courimo-digital-marketing ; https://ca.linkedin.com/in/joshbilerman'],
+  ['Upearance','https://upearance.com','2065 Rue Parthenais, Montréal, QC','11-50','Agence e-commerce / ads / email','Karim Tawfic','À vérifier','À vérifier','À vérifier','7.3','Angle e-commerce agency ops: acquisition, créa, email, ventes et delivery dans une seule stack.','Fondateur public, équipe 11-50 et clientèle service/e-commerce.',SRC.upearance],
+  ['Brand Digital Inc','https://branddigital.agency','75 Rue Queen, Suite 1400, Montreal, QC H3C 2N6','10-49','Agence marketing / contenu / social','Benjamin Ohayon','https://ca.linkedin.com/in/benjamin-ohayon-447b6b252','info@branddigital.agency','514-269-2148','7.2','Pitch agence multi-services: CRM + projets + facturation + marketing ops dans une seule stack.','Agence locale multi-services avec bon potentiel multi-modules. Fondateur visible publiquement.',SRC.digital + ' ; https://branddigital.agency/about-us/ ; https://ca.linkedin.com/in/benjamin-ohayon-447b6b252'],
+  ['Skille','https://www.skille.co/','Montréal, QC','2-9','Agence e-commerce / paid media / CRM retention','Kevin Moore','À vérifier','À vérifier','À vérifier','7.2','Très bon fit pour une petite agence e-commerce qui veut plus de structure client, projet et finance.','Fondateur public et modèle direct-to-expert adapté au pack Odoo.',SRC.skille],
+  ['Twenty West Media','https://twentywestmedia.com','Kirkland, QC','10-49','Agence marketing / web','Pete Michaud','À vérifier','info@twentywestmedia.com','888-316-6549','7.0','Agence services: CRM + delivery + facturation + visibilité sur les comptes.','Bon sweet spot 10-49 en marché local. Fondateur public confirmé.',SRC.digital + ' ; https://twentywestmedia.com/our-team/ ; https://twentywestmedia.com/about-us/'],
+  ['OptiWeb Marketing','https://www.optiwebmarketing.ca','Mont-Royal, QC','10-49','Agence web / SEO / e-commerce','Brad Sacks','À vérifier','À vérifier','À vérifier','7.0','Structurer ventes, projets web, suivi client et facturation.','Agence locale avec SEO, web et e-commerce. Fondateur public confirmé.',SRC.digital + ' ; https://www.optiwebmarketing.ca/about/'],
+  ['Direct Objective Consulting','À vérifier','Montréal, QC','2-9','Conseil marketing / ABM / growth','Gil Gruber','À vérifier','À vérifier','À vérifier','6.9','Cabinet de conseil: CRM, offres, suivi mandats et facturation légère.','Petite structure et décideur public identifié comme founder/president.',SRC.digital + ' ; https://www.crunchbase.com/organization/direct-objective-consulting'],
+  ['Blue Badger','https://badger.blue','Montréal, QC','10-49','E-commerce / Shopify / développement','Jonathan Hiltser','À vérifier','jonathan@badger.blue','514-612-1245','6.9','Bon angle services + projets + support + finance pour une agence e-commerce technique.','Complexité delivery + rétention client. Cofondateur/CTO et email public trouvés.',SRC.digital + ' ; https://www.allbiz.ca/blue-badger-514-612-1245 ; https://ca.linkedin.com/jobs/view/founding-bdr-senior-business-development-rep-at-blue-badger-4385137512'],
+  ['Rablab','https://rablab.ca','Montréal, QC','10-49','Agence SEO / SEM','Nicolas Rabouille','À vérifier','À vérifier','514-317-6764','6.9','Structurer acquisition, comptes clients et livraison de mandats marketing.','Forte logique récurrente en SEO/SEM. Cofondateur public confirmé.',SRC.digital + ' ; https://rablab.ca/en/agency/'],
+  ['Digital Growth Core','https://digitalgrowthcore.com','Montréal, QC','2-9','Agence paid media','Charbel Farah','À vérifier','charbel@digitalgrowthcore.com','438-259-2684','6.8','Petit shop paid media: CRM, suivi campagnes, tâches récurrentes et facturation.','Taille favorable et fondateur public avec email direct.',SRC.digital + ' ; https://digitalgrowthcore.com/about ; https://digitalgrowthcore.com/contact'],
+  ['Code Marketing','https://codemarketing.ca','Montréal, QC','10-49','Agence marketing / digital strategy','Philippe Bussières','À vérifier','À vérifier','À vérifier','6.8','Unifier stratégie, comptes, projets et suivi de production.','Bonne taille et offre assez large pour plusieurs modules. Fondateur public confirmé.',SRC.digital + ' ; https://codemarketing.ca/en/agency/'],
+  ['HELPY Media','https://www.helpymedia.com','Montréal, QC','10-49','Vidéo / contenu / social media','Louis-Paul Baril','À vérifier','À vérifier','1-855-885-8650','6.8','Mieux piloter briefs, tournages, approbations et facturation multi-projets.','Agence contenu avec forte composante production. Fondateur/CEO public confirmé.',SRC.digital + ' ; https://www.helpymedia.com/en-ca/about-us ; https://www.helpymedia.com/ ; https://www.crunchbase.com/organization/helpy-media'],
+  ['Broworks','https://www.broworks.net','Montréal, QC','2-9','Web design / Webflow / branding','Stefan Ivic','À vérifier','À vérifier','À vérifier','6.8','Cabinet web boutique: pipeline, projets, heures et facturation.','Très bon fit micro-agence. Founder & CEO public confirmé.',SRC.digital + ' ; https://www.broworks.net/about'],
+  ['Toast Studio','https://www.toaststudio.com','Montréal, QC','10-49','Contenu / production / stratégie','Alexandre Gravel','À vérifier','info@toaststudio.com','514-844-2647','6.8','Gérer plus finement production, comptes, planning et reporting.','Ops multi-formats et projet/retainer. Associé fondateur publiquement cité.',SRC.digital + ' ; https://www.toaststudio.com/articles/le-groupe-toast-poursuit-sa-croissance-et-annonce-larrivee-de-lhomme-daffaires-serge-beauchemin-a-titre-dassocie/ ; https://www.toaststudio.com/en/contact-us/'],
+  ['Web Tonic','https://www.webtonic.io','Montréal, QC','10-49','B2B marketing / performance','Cédric Pharand','À vérifier','info@webtonic.io','514-700-4483','6.8','Structurer pipeline B2B, delivery marketing et suivi financier.','Niche B2B et fondateur/CEO public confirmé.',SRC.digital + ' ; https://www.webtonic.io/en/about ; https://www.cedricpharand.com/'],
+  ['House Of Socials','https://www.houseofsocials.com/','G101-360 rue St-Jacques, Montréal, QC H2Y 1P5','2-9','Agence social / contenu / vidéo','Gabrielle Breton','À vérifier','info@houseofsocials.com','438-946-7048','6.8','Micro-agence de contenu: pipeline, production, approbations, facturation et retainer management.','Cofondatrices publiques et offre orientée résultats.', 'https://www.houseofsocials.com/about ; https://www.houseofsocials.com/ ; ' + SRC.digital],
+  ['Dreww','À vérifier','Montréal, QC','10-49','Agence créative / vidéo / social','À vérifier','À vérifier','À vérifier','À vérifier','6.7','Centraliser comptes, projets créatifs et rentabilité de mandats.','Belle logique projet/agence.',SRC.digital],
+  ['Digitad','À vérifier','Montréal, QC','10-49','SEO / SEM / web performance','À vérifier','À vérifier','À vérifier','À vérifier','6.7','Structurer acquisition client, delivery SEO/SEM et reporting.','Taille compatible et orientation performance.',SRC.digital],
+  ['Reborn Marketing inc.','À vérifier','Montréal, QC','10-49','Agence marketing / lead gen','À vérifier','À vérifier','À vérifier','À vérifier','6.7','CRM + projets + suivi facturation pour agence de lead generation.','Forte logique demand gen / résultats.',SRC.digital],
+  ['RankWorks','À vérifier','Pointe-Claire, QC','10-49','Agence SEO / web','À vérifier','À vérifier','À vérifier','À vérifier','6.6','Structurer opérations et comptes clients dans une agence locale.','Taille compatible, à challenger en discovery.',SRC.digital],
+  ['Bloom | Digital Marketing Agency','À vérifier','Montréal, QC','50-249','Agence marketing','À vérifier','À vérifier','À vérifier','À vérifier','6.4','Si BU PME autonome: angle process internes et visibilité commerciale.','Plus gros que le sweet spot, priorité moyenne.',SRC.digital],
+  ['Red Goat Digital Agency','À vérifier','Montréal, QC','2-9','Agence e-commerce marketing','À vérifier','À vérifier','À vérifier','À vérifier','6.6','Très petite structure: rapid wins sur CRM, facturation et gestion client.','Nouveau cabinet, faible inertie probable.',SRC.digital],
+  ['ProMerit','À vérifier','Montréal, QC','10-49','Conseil e-commerce / Amazon ops','À vérifier','À vérifier','À vérifier','À vérifier','6.7','Angle opérations e-commerce, comptes, suivi interventions et finance.','Fit intéressant si opérations internes encore dispersées.',SRC.digital],
+  ['Webistry','À vérifier','Montréal, QC','10-49','Agence paid media / growth','À vérifier','À vérifier','À vérifier','À vérifier','6.7','Pipeline, retainer, achats média et rentabilité de comptes dans un seul cockpit.','Agence performance typiquement multi-outils.',SRC.digital],
+  ['Zigma Internet Marketing','À vérifier','Montréal, QC','2-9','Agence SEO / local marketing','À vérifier','À vérifier','À vérifier','À vérifier','6.6','Pack léger pour structurer leads, tâches récurrentes et factures.','Micro-agence et décideur probablement accessible.',SRC.digital],
+  ['Let\'s Get Optimized','À vérifier','Montréal, QC','10-49','SEO / digital marketing','À vérifier','À vérifier','À vérifier','À vérifier','6.5','Angle process interne et rentabilité de mandats, plus qu\'ERP complet.','Assez gros et plus mature, priorité plus basse.',SRC.digital],
+  ['JDM CPA Inc.','À vérifier','Montréal, QC','2-9','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.7','Cabinet boutique: CRM, onboarding client, tâches récurrentes et facturation.','Très petite structure, bon accès décideur probable.',SRC.accounting],
+  ['JOEL MAGGIO, CPA','À vérifier','Montréal, QC','2-9','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.7','Cabinet solo ou micro-équipe: structurer relation client, production et recouvrement.','Taille idéale pour un pack simple.',SRC.accounting],
+  ['Timing CPA inc','À vérifier','Montréal, QC','2-9','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.6','Process client, échéanciers, facturation et tableaux de bord simples.','Fit cabinet PME classique.',SRC.accounting],
+  ['Moras CPA','À vérifier','Montréal, QC','2-9','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.6','Structurer acquisition client et exécution récurrente dans une petite équipe.','Très petite taille et accessibilité probable.',SRC.accounting],
+  ['Hornbeam Labs Inc.','À vérifier','Montréal, QC','2-9','Accounting / financial advising','À vérifier','À vérifier','À vérifier','À vérifier','6.5','Bon angle conseil + finance + projet dans une structure hybride.','Cabinet récent et petite équipe.',SRC.accounting],
+  ['Porter Hétu International','À vérifier','Montréal, QC','10-49','Comptabilité / conseil','À vérifier','À vérifier','À vérifier','À vérifier','6.5','Cabinet PME avec besoin probable de visibilité inter-équipes.','Taille compatible, angle services pro.',SRC.accounting],
+  ['Montreal Financial','À vérifier','Montréal, QC','2-9','Comptabilité / corporate training','À vérifier','À vérifier','À vérifier','À vérifier','6.4','Petit cabinet: CRM, tâches et facturation unifiée.','Faible inertie probable.',SRC.accounting],
+  ['Satgur Accounting Services CPA Inc.','À vérifier','Montréal, QC','2-9','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.4','Cabinet local: meilleur suivi client et exécution récurrente.','Taille favorable.',SRC.accounting],
+  ['KVB CPA INC.','À vérifier','Montréal, QC','10-49','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.4','Cabinet PME: process, tâches, recouvrement et reporting.','Bonne taille, enrichissement décideur à faire.',SRC.accounting],
+  ['RMAccounting','À vérifier','Montréal, QC','2-9','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.3','Structurer croissance et opérations client dans un outil unifié.','Très petite structure.',SRC.accounting],
+  ['IMPOT MONTREAL EN LIGNE','À vérifier','Montréal, QC','2-9','Comptabilité / fiscalité','À vérifier','À vérifier','À vérifier','À vérifier','6.2','CRM + tâches + facturation + suivi client.','Taille favorable, budget à qualifier.',SRC.accounting],
+  ['ER Accounting Services','À vérifier','Dollard-des-Ormeaux, QC','2-9','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.2','Simplifier acquisition client, facturation et opérations de cabinet.','Petite structure locale accessible.',SRC.accounting],
+  ['Bardosh.ca Income Tax & Accounting','À vérifier','Montréal, QC','10-49','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.4','Approche cabinet en croissance: process, tâches, recouvrement et reporting.','Bonne taille et secteur compatible.',SRC.accounting],
+  ['Griffin Business Solutions','À vérifier','Westmount, QC','2-9','Comptabilité / conseil','À vérifier','À vérifier','À vérifier','À vérifier','6.3','Cabinet boutique: structurer pipeline commercial et projets clients.','Décideur probablement accessible.',SRC.accounting],
+  ['Shemie CPA','À vérifier','Montréal, QC','50-249','Comptabilité / finance law','À vérifier','À vérifier','À vérifier','À vérifier','5.8','Angle process internes seulement; hors coeur du sweet spot.','Cabinet plus gros, priorité faible.',SRC.accounting],
+  ['Boily Handfield','À vérifier','Montréal, QC','10-49','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.3','Cabinet PME classique: CRM, tâches récurrentes, facturation.','Bonne taille, enrichissement direct à faire.',SRC.accounting],
+  ['Whitrod Leduc CPA','À vérifier','Pointe-Claire, QC','2-9','Comptabilité','À vérifier','À vérifier','À vérifier','À vérifier','6.1','Petit cabinet: centraliser relation client et exécution.','Taille favorable.',SRC.accounting],
+  ['Accountor CPA Accounting Bookkeeping and Tax Experts','https://accountor.cpa','285 Avenue du Mont-Royal Est, Montréal, QC H2T 1P6','50-249','Services comptables','Igor Reshynsky','À vérifier','À vérifier','438-817-7974','6.2','Angle cabinet comptable: ventes, onboarding client, projets internes et RH sous un seul ERP léger.','Cabinet structuré avec présence locale; taille un peu haute.', 'https://accountor.cpa/about-us.html ; ' + SRC.accounting],
+  ['George Dimov, CPA','À vérifier','Montréal, QC','10-49','Services comptables','George Dimov','À vérifier','À vérifier','À vérifier','6.1','Approche cabinet de services: gagner en fluidité entre acquisition, delivery et facturation.','Présence locale indirecte; à valider avant outreach.',SRC.accounting],
+  ['Netleaf','À vérifier','Québec, QC','2-9','SEO / web design','À vérifier','À vérifier','À vérifier','À vérifier','6.7','Micro-agence web/SEO: leads, projets, temps et facturation.','Taille idéale et offre simple.',SRC.designqc],
+  ['Falia','À vérifier','Québec, QC','2-9','Agence digitale','À vérifier','À vérifier','À vérifier','À vérifier','6.6','Structurer pipeline, exécution et suivi client dans une petite équipe.','Petite taille et posture consultative.',SRC.designqc],
+  ['Figure','À vérifier','Québec, QC','2-9','Branding / design','À vérifier','À vérifier','À vérifier','À vérifier','6.2','Studio boutique: ventes, projets, achats externes et facturation.','Très petite équipe.',SRC.designqc],
+  ['Uroboro | Web Design','À vérifier','Lévis, QC','10-49','Web design / web development','À vérifier','À vérifier','À vérifier','À vérifier','6.6','Structurer mandats web, temps, suivi client et marge projet.','Taille compatible et delivery projet.',SRC.designqc],
+  ['UX for the Planet','À vérifier','Québec, QC','2-9','UX / product / consulting','À vérifier','À vérifier','À vérifier','À vérifier','6.1','Cabinet UX boutique: CRM, projets et facturation légère.','Niche claire, petite équipe.',SRC.designqc],
+  ['Workshop 480','À vérifier','Québec, QC','2-9','Packaging / print / web','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Structurer briefs, production et facturation.','Studio petit format.',SRC.designqc],
+  ['Tadam Creative Studio','À vérifier','Québec, QC','10-49','Creative studio / marketing strategy','À vérifier','À vérifier','À vérifier','À vérifier','6.4','Gérer projets créatifs, comptes et production dans un seul back-office.','Taille compatible.',SRC.designqc],
+  ['VGA App Developers','À vérifier','Québec, QC','10-49','App / web development','À vérifier','À vérifier','À vérifier','À vérifier','6.5','Bon angle agence tech: pipeline, projets, support et facturation.','Delivery multi-projets et équipe 10-49.',SRC.designqc],
+  ['ProgExpert','À vérifier','Québec, QC','2-9','Branding / web design','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Studio de design: mieux suivre devis, tâches et encaissement.','Petite structure.',SRC.designqc],
+  ['Advanta Design','À vérifier','Québec, QC','2-9','Industrial design','À vérifier','À vérifier','À vérifier','À vérifier','6.1','Cabinet produit: pipeline, projets, phases et facturation.','Approche projet très compatible.',SRC.designqc],
+  ['Thirdbridge','https://www.thirdbridge.ca/en/','830 Rue Saint-Joseph Est, Québec, QC G1K 3C9','50-249','App / custom software / design','À vérifier','À vérifier','À vérifier','+14387944808','6.0','Si BU ou cellule PME: structurer avant-vente, projets et pilotage financier.','Plus gros que le sweet spot; à prendre seulement si accès ciblé.',SRC.designqc],
+  ['Nomade Solutions Mobiles','À vérifier','Québec, QC','2-9','Mobile app / UX consulting','À vérifier','À vérifier','À vérifier','À vérifier','6.2','Petit cabinet tech: pipeline, sprints, support et facturation.','Niche mobile/UX, équipe courte.',SRC.designqc],
+  ['Productions Cina','À vérifier','Québec, QC','2-9','Vidéo / design','À vérifier','À vérifier','À vérifier','À vérifier','5.9','Structurer briefs, tournages, approbations et factures.','Micro-structure production.',SRC.designqc],
+  ['Graph Synergie','À vérifier','Québec, QC','10-49','Branding / marketing / web','À vérifier','À vérifier','À vérifier','À vérifier','6.3','Agence mixte design/marketing: bon angle comptes + delivery + facturation.','Taille compatible.',SRC.designqc],
+  ['WebSEO Quebec','À vérifier','Québec, QC','2-9','SEO / web design','À vérifier','À vérifier','À vérifier','À vérifier','6.2','Micro-agence: pipeline, tâches, SEO recurring et facturation.','Bon fit petit pack.',SRC.designqc],
+  ['Toumoro','À vérifier','Québec, QC','10-49','Custom software / UX','À vérifier','À vérifier','À vérifier','À vérifier','6.3','Angle services tech: CRM, projets, support et rentabilité.','Taille compatible.',SRC.designqc],
+  ['Kiwad inc.','À vérifier','Château-Richer, QC','2-9','Web development','À vérifier','À vérifier','À vérifier','À vérifier','6.1','Petite agence web: devis, projets, heures et factures.','Très petite structure.',SRC.designqc],
+  ['Ose Design','À vérifier','Québec, QC','2-9','Graphic design / advertising','À vérifier','À vérifier','À vérifier','À vérifier','5.9','Studio de design: structurer production et facturation.','Micro-équipe.',SRC.designqc],
+  ['Pro-Actif','À vérifier','Québec, QC','2-9','Logo / graphic design','À vérifier','À vérifier','À vérifier','À vérifier','5.8','Gestion simple de pipeline et projets créatifs.','Très petite structure.',SRC.designqc],
+  ['Magnitude Group','À vérifier','Québec, QC','10-49','Graphic design / packaging','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Studio packaging: briefs, tâches, approbations et marge projet.','Bonne logique projet.',SRC.designqc],
+  ['Viva Design','À vérifier','L\'Ancienne-Lorette, QC','2-9','Graphic design / branding / web','À vérifier','À vérifier','À vérifier','À vérifier','5.9','Bon fit mini-pack pour structurer devis et projets.','Petite équipe.',SRC.designqc],
+  ['Unik Media','À vérifier','Québec, QC','2-9','Graphic design / SEO / web','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Structurer comptes, SEO/web delivery et facturation.','Petite structure locale.',SRC.designqc],
+  ['iXmédia','À vérifier','Québec, QC','10-49','UX / SEO / web development','À vérifier','À vérifier','À vérifier','À vérifier','6.3','Agence UX/web: pipeline, projets, maintenance et finance.','Taille compatible.',SRC.designqc],
+  ['Lacerte Communications','À vérifier','Québec, QC','2-9','Graphic design / web design','À vérifier','À vérifier','À vérifier','À vérifier','5.9','Mieux suivre mandats créatifs, approbations et encaissement.','Micro-agence.',SRC.designqc],
+  ['L\'Effet Monstre','À vérifier','Québec, QC','10-49','Custom software / SEO / web','À vérifier','À vérifier','À vérifier','À vérifier','6.2','Cabinet digital mixte: avant-vente, projets et revenus récurrents.','Stack probablement morcelée.',SRC.designqc],
+  ['JB Impact inc.','À vérifier','Québec, QC','2-9','SEO / web design / growth','À vérifier','À vérifier','À vérifier','À vérifier','6.1','Bon angle micro-agence: CRM, tâches, SEO recurring et facturation.','Taille favorable.',SRC.designqc],
+  ['Alphatek','À vérifier','Québec, QC','10-49','Graphic design / advertising','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Studio/atelier: devis, projets, suivi client et achats externes.','Taille compatible.',SRC.designqc],
+  ['Unikom - Agence WEb','À vérifier','Québec, QC','10-49','Branding / web / content','À vérifier','À vérifier','À vérifier','À vérifier','6.2','Structurer comptes, projets web, contenus et facturation.','Agence multi-services locale.',SRC.designqc],
+  ['Innov Agence','À vérifier','Sainte-Brigitte-de-Laval, QC','2-9','Web / PPC / e-commerce','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Pack léger pour piloter leads, projets et factures.','Petite agence.',SRC.designqc],
+  ['ezi wine marketing','À vérifier','Québec, QC','10-49','Advertising / branding / social','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Structurer mandats marketing nichés et rentabilité.','Positionnement vertical intéressant.',SRC.designqc],
+  ['Cameleon','À vérifier','Québec, QC','10-49','Advertising / branding / social','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Bon angle agence créative multi-mandats.','Taille compatible.',SRC.designqc],
+  ['Bissonnette Communication Impact','À vérifier','Québec, QC','10-49','Digital strategy / events / PR / web','À vérifier','À vérifier','À vérifier','À vérifier','6.1','Gérer projets, événements, heures et facturation dans un seul outil.','Complexité opérationnelle visible.',SRC.designqc],
+  ['ATELIER MADE','À vérifier','Québec, QC','10-49','Marketing strategy / branding / web','À vérifier','À vérifier','À vérifier','À vérifier','6.1','Structurer stratégie, production et suivi client.','Taille compatible.',SRC.designqc],
+  ['Digia','À vérifier','Québec, QC','50-249','Software / web development','À vérifier','À vérifier','À vérifier','À vérifier','5.9','Plus gros acteur; angle process internes ou cellule PME seulement.','Taille au-dessus du sweet spot.',SRC.webqc],
+  ['TLM','À vérifier','Québec, QC','50-249','Software / web development','À vérifier','À vérifier','À vérifier','+18778964472','5.8','Angle process internes seulement.','Trop grand pour un pack standard.',SRC.designqc],
+  ['TM Digital','À vérifier','Saint-Ferdinand, QC','2-9','Web development / e-commerce','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Structurer pipeline web/e-commerce et facturation.','Petite équipe.',SRC.webqc],
+  ['ProWeb Solutions','À vérifier','Victoriaville, QC','2-9','Web development / SEO','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Micro-agence web: leads, projets et factures.','Fit petit pack.',SRC.webqc],
+  ['CDID Inc.','À vérifier','Saint-Georges, QC','10-49','Custom software / e-commerce','À vérifier','À vérifier','À vérifier','À vérifier','6.0','Services tech: avant-vente, delivery et marge projet.','Équipe 10-49 et opérations multi-projets.',SRC.webqc],
+  ['MaximumTrainer - Max++ inc.','À vérifier','Québec, QC','2-9','Software / web development','À vérifier','À vérifier','À vérifier','À vérifier','5.9','Structurer projets et suivi client dans une petite boîte logicielle.','Très petite taille.',SRC.webqc],
+  ['Rocky Giroux conception de sites web Trois-Rivieres','À vérifier','Trois-Rivières, QC','Freelancer','Web / SEO / e-commerce','Rocky Giroux','À vérifier','À vérifier','À vérifier','5.7','Freelance avancé: CRM, devis et facturation.','Hors coeur PME mais contact direct.',SRC.webqc],
+  ['Cellulaire Marketing Quebec','À vérifier','Stoneham-et-Tewkesbury, QC','2-9','Mobile app / SEO / web','À vérifier','À vérifier','À vérifier','À vérifier','5.8','Cabinet très petit: pipeline, support et facturation simple.','À garder en fond de liste.',SRC.webqc]
+];
+
+if (rows.length !== 100) {
+  throw new Error(`Expected 100 rows, got ${rows.length}`);
+}
+
+const header = [
+  'Nom entreprise','Site web','Adresse','Taille estimée','Secteur (SCIAN approx)','Nom du dirigeant','LinkedIn dirigeant','Email pro','Téléphone','Score /10','Angle d\'attaque','Signal timing','Source(s)'
+];
+
+const escapeCsv = (value) => {
+  const s = String(value ?? '');
+  return '"' + s.replace(/"/g, '""') + '"';
+};
+
+const csv = [header, ...rows].map((row) => row.map(escapeCsv).join(',')).join('\n') + '\n';
+fs.writeFileSync(csvPath, csv, 'utf8');
+
+const summary = `# Summary — Batch Odoo prospects 2026-04-19
+
+- Nombre total de prospects: 100
+- Source principale d\'agrégation: Clutch Montréal / Québec + sites d\'agence + quelques fiches publiques déjà enrichies
+- Logique de tri: score décroissant puis accessibilité du décideur
+- Règle d\'enrichissement: quand le décideur public n\'est pas confirmé, le champ reste \`À vérifier\`
+
+## Top 5 à contacter en priorité
+
+1. Defedis Food Distributors Inc. — 8.7/10
+2. Plan A Experts-conseils — 8.4/10
+3. JPM Consultant Inc. — 8.2/10
+4. GHOCHE Architecte — 8.0/10
+5. Momentumm Digital — 7.9/10
+
+## Tendances observées
+
+- Les meilleures cibles restent les agences, cabinets de services professionnels et structures projet de 2 à 50 employés.
+- Les agences marketing/web sont nombreuses mais souvent déjà outillées; l\'angle doit être opérations, delivery et finance, pas juste CRM.
+- Les cabinets d\'expertise et firmes de conseil gardent le meilleur ratio accessibilité décideur / besoin réel de structuration.
+- Les structures trop grandes ou très matures ont été gardées bas dans le classement même si elles apparaissent dans les répertoires.
+
+## Recommandation d\'angle global
+
+- Ouvrir sur la friction opérationnelle visible: suivi client, delivery multi-projets, temps, facturation, achats ou inventaire selon le cas.
+- En cold outreach, vendre un diagnostic de fluidité opérationnelle, pas un ERP.
+- Prioriser d\'abord les lignes avec décideur public confirmé, téléphone public ou email public.
+
+## Limite actuelle du batch
+
+- La liste est bien montée à 100 prospects selon les mêmes critères de fit Odoo PME Québec.
+- Une nouvelle passe a permis d'augmenter le nombre de décideurs publics confirmés sur les cibles prioritaires. La colonne dirigeant reste \`À vérifier\` uniquement quand je n'ai pas trouvé de signal public assez solide.
+`;
+
+fs.writeFileSync(summaryPath, summary, 'utf8');
+console.log(`Wrote ${rows.length} prospects to ${csvPath}`);

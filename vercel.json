@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm run build",
+  "crons": [
+    { "path": "/api/cron/refresh-news", "schedule": "0 12 * * 1" },
+    { "path": "/api/cron/refresh-events", "schedule": "30 12 * * 1" }
+  ]
+}

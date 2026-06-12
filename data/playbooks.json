@@ -1,0 +1,224 @@
+[
+  {
+    "id": "field_service_hvac",
+    "industry": "HVAC-R / réfrigération / service terrain",
+    "priority": "high",
+    "fit": "Très fort",
+    "icp": "PME de 10 à 50 employés avec installation, maintenance, pièces, techniciens mobiles et coordination devis-planification-facturation.",
+    "angles": [
+      "Tu perds du temps entre devis, dispatch, achats et facturation.",
+      "Les infos chantier et service restent éclatées entre Excel, téléphone et compta.",
+      "Le stock camion et les pièces urgentes créent du bruit et des retards."
+    ],
+    "problems": [
+      "Planification techniciens et interventions peu fiable",
+      "Suivi des pièces, retours et achats urgents difficile",
+      "Temps non facturé ou mal capté",
+      "Visibilité faible sur rentabilité par chantier, client ou technicien"
+    ],
+    "modules": [
+      "Field Service",
+      "Inventory",
+      "Purchase",
+      "Sales",
+      "Project",
+      "Accounting"
+    ],
+    "questions": [
+      "Comment tu dispatches les interventions aujourd’hui ?",
+      "Qui sait en temps réel où sont les pièces critiques ?",
+      "Le temps des techniciens arrive comment jusqu’à la facture ?"
+    ],
+    "redFlags": [
+      "Entreprise trop petite sans vraie complexité d’opérations",
+      "Déjà très outillée avec ERP métier solide et équipe interne",
+      "Volume terrain trop faible pour justifier un vrai projet"
+    ],
+    "offerHypothesis": "Pack cadrage + service terrain + stock + achats"
+  },
+  {
+    "id": "construction_electrical",
+    "industry": "Électriciens / construction spécialisée / opérations chantier",
+    "priority": "high",
+    "fit": "Très fort",
+    "icp": "Entreprises avec devis, chantiers récurrents, achats terrain, sous-traitance légère et facturation liée à l’avancement.",
+    "angles": [
+      "Le chantier casse le lien entre vente, achats, temps et facturation.",
+      "Les coûts explosent quand les achats d’urgence ne remontent pas correctement.",
+      "La direction manque de lecture marge / avancement avant la fin du projet."
+    ],
+    "problems": [
+      "Devis et exécution déconnectés",
+      "Achats chantier peu contrôlés",
+      "Feuilles de temps et extras mal consolidés",
+      "Marge projet visible trop tard"
+    ],
+    "modules": [
+      "Sales",
+      "Project",
+      "Timesheets",
+      "Purchase",
+      "Inventory",
+      "Accounting"
+    ],
+    "questions": [
+      "Tu vois la marge chantier en cours ou seulement à la fin ?",
+      "Les achats terrain sont-ils reliés au bon projet automatiquement ?",
+      "Comment les extras et changements client sont-ils suivis ?"
+    ],
+    "redFlags": [
+      "Activité trop simple et peu projet",
+      "ERP construction déjà bien adopté",
+      "Direction focalisée uniquement sur la compta de fin de mois"
+    ],
+    "offerHypothesis": "Pack pilotage chantier + achats + temps + rentabilité"
+  },
+  {
+    "id": "manufacturing_distribution",
+    "industry": "Manufacturier / distribution / pièces",
+    "priority": "high",
+    "fit": "Très fort",
+    "icp": "PME avec achats, inventaire, production légère ou assemblage, logistique et coordination vente-opérations-finance.",
+    "angles": [
+      "Ton vrai problème n’est pas juste l’inventaire, c’est la synchronisation ventes-achats-production.",
+      "Les erreurs de stock et de prévision créent des retards, du cash bloqué et du stress client.",
+      "La lecture opérationnelle est trop tardive pour décider vite."
+    ],
+    "problems": [
+      "Stock peu fiable",
+      "Achats déclenchés trop tard ou trop tôt",
+      "Visibilité limitée sur capacité et priorités",
+      "Suivi marge par produit / commande faible"
+    ],
+    "modules": [
+      "Inventory",
+      "Purchase",
+      "Manufacturing",
+      "Sales",
+      "Barcode",
+      "Accounting"
+    ],
+    "questions": [
+      "Combien de temps tu passes à corriger le stock ou à vérifier manuellement ?",
+      "La production ou préparation repart de quelle source de vérité ?",
+      "Tu connais tes ruptures et retards avant que le client appelle ?"
+    ],
+    "redFlags": [
+      "Structure déjà très mature avec ERP industriel en place",
+      "Production trop complexe pour un premier pack court",
+      "Aucun enjeu inventaire ou coordination inter-équipes"
+    ],
+    "offerHypothesis": "Pack inventaire + achats + vente + production légère"
+  },
+  {
+    "id": "engineering_consulting",
+    "industry": "Ingénierie / experts-conseils techniques",
+    "priority": "medium",
+    "fit": "Bon si opérations réelles",
+    "icp": "Firmes qui vivent des projets, ressources, heures, sous-traitants, livrables et facturation à l’étape, sans être trop techno/internalisables.",
+    "angles": [
+      "Le vrai pain est souvent la coordination projet-heures-facturation, pas seulement la gestion documentaire.",
+      "Quand la donnée projet vit dans trop d’outils, la marge se dégrade sans signal clair.",
+      "Un bon ERP doit aider à piloter l’exécution, pas juste la finance."
+    ],
+    "problems": [
+      "Suivi des heures et budgets projet inégal",
+      "Charge et capacité peu lisibles",
+      "Facturation à l’avancement ou aux jalons difficile à fiabiliser",
+      "Vision faible sur rentabilité par mandat"
+    ],
+    "modules": [
+      "Project",
+      "Timesheets",
+      "Planning",
+      "Sales",
+      "Accounting",
+      "Documents"
+    ],
+    "questions": [
+      "Comment vous reliez budget, temps consommé et facturation ?",
+      "La direction voit-elle la rentabilité des mandats en cours ?",
+      "Combien d’outils manipulent l’équipe entre estimation, exécution et facturation ?"
+    ],
+    "redFlags": [
+      "Cabinet très techno avec équipe interne capable de tout internaliser",
+      "Activité surtout intellectuelle sans vraie friction opérationnelle",
+      "Trop gros cabinet pour un pack initial rapide"
+    ],
+    "offerHypothesis": "Pack projets + temps + facturation + pilotage direction"
+  },
+  {
+    "id": "fire_protection_security",
+    "industry": "Protection incendie / sécurité terrain / inspection",
+    "priority": "high",
+    "fit": "Très bon",
+    "icp": "Entreprises qui mixent inspections récurrentes, interventions terrain, conformité, pièces et contrats d’entretien.",
+    "angles": [
+      "Les inspections récurrentes deviennent vite un chaos de planification et de preuve terrain.",
+      "Le contrat d’entretien perd en marge quand le service, les pièces et les renouvellements ne se parlent pas.",
+      "Le sujet n’est pas juste planifier, c’est industrialiser la répétition."
+    ],
+    "problems": [
+      "Planification des visites récurrentes",
+      "Preuves d’intervention et conformité éparpillées",
+      "Renouvellements, ventes additionnelles et correctifs peu structurés",
+      "Pièces et interventions urgentes mal suivies"
+    ],
+    "modules": [
+      "Field Service",
+      "Maintenance",
+      "Subscriptions ou contrats",
+      "Sales",
+      "Inventory",
+      "Accounting"
+    ],
+    "questions": [
+      "Comment vous gérez les visites d’inspection récurrentes aujourd’hui ?",
+      "Les recommandations et correctifs reviennent-ils facilement en devis ?",
+      "Qui suit les contrats, échéances et renouvellements ?"
+    ],
+    "redFlags": [
+      "Usage d’un vertical métier très bien implanté et satisfaisant",
+      "Peu de volume récurrent",
+      "Projet uniquement documentaire sans besoin d’exécution"
+    ],
+    "offerHypothesis": "Pack inspections récurrentes + service + contrats + stock"
+  },
+  {
+    "id": "architecture_design_build",
+    "industry": "Architecture / design-build / spécification",
+    "priority": "medium",
+    "fit": "Bon si gestion projet forte",
+    "icp": "Structures avec projets multiples, validation client, coordination fournisseurs, feuilles de temps et étapes de facturation.",
+    "angles": [
+      "Quand estimation, design, achats et suivi client vivent séparément, le pilotage devient flou.",
+      "Le manque de visibilité projet use la marge et rallonge les cycles.",
+      "Le bon angle n’est pas “ERP pour architectes”, mais meilleur contrôle de l’exécution et de la facturation."
+    ],
+    "problems": [
+      "Charge projet mal arbitrée",
+      "Temps et livrables peu consolidés",
+      "Achats fournisseurs ou mobilier mal reliés au projet",
+      "Facturation jalonnée difficile à suivre"
+    ],
+    "modules": [
+      "Project",
+      "Timesheets",
+      "Sales",
+      "Purchase",
+      "Accounting",
+      "Documents"
+    ],
+    "questions": [
+      "Comment vous suivez l’avancement et la rentabilité entre les phases ?",
+      "Les achats et dépenses projet remontent-ils sans friction ?",
+      "La facturation suit-elle vraiment les jalons livrés ?"
+    ],
+    "redFlags": [
+      "Studio trop petit et trop artisanal",
+      "Activité surtout créative sans enjeu d’opérations",
+      "Pas assez de structure projet pour justifier un outillage ERP"
+    ],
+    "offerHypothesis": "Pack projets + temps + achats + facturation jalonnée"
+  }
+]

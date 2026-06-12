@@ -1,0 +1,18 @@
+{
+  "name": "odoo-leads-admin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-dashboard.mjs",
+    "dev": "node scripts/server.mjs",
+    "start": "pm2 start ecosystem.config.cjs",
+    "stop": "pm2 stop odoo-admin",
+    "restart": "pm2 restart odoo-admin",
+    "logs": "pm2 logs odoo-admin --lines 80",
+    "status": "pm2 status",
+    "setup": "npm install -g pm2 && mkdir -p logs && pm2 start ecosystem.config.cjs && pm2 save && echo '\\n✓ Serveur lancé. Pour qu il redémarre au boot : pm2 startup (puis copier-coller la commande affichée).'"
+  },
+  "dependencies": {
+    "@vercel/blob": "^1.1.1"
+  }
+}

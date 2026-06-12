@@ -1,0 +1,112 @@
+{
+  "montreal_design_week_index_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:31:51.121Z"
+  },
+  "mmts_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:31:52.563Z"
+  },
+  "expo_design_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:31:54.780Z"
+  },
+  "adm_montreal_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:31:56.427Z"
+  },
+  "pack_ex_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:31:58.758Z"
+  },
+  "powder_bulk_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:00.516Z"
+  },
+  "dm_montreal_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:02.971Z"
+  },
+  "strategies_pme_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:06.864Z"
+  },
+  "siq_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:08.531Z"
+  },
+  "mpower_summit_2027": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:11.370Z"
+  },
+  "mcee_2027": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:12.716Z"
+  },
+  "sial_canada_2027": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:16.898Z"
+  },
+  "cmeq_congres_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:18.509Z"
+  },
+  "ccilaval_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:22.000Z"
+  },
+  "cciq_quebec_2026": {
+    "ok": false,
+    "code": 0,
+    "checkedAt": "2026-06-12T17:32:23.282Z"
+  },
+  "cifst_2027": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:32.393Z"
+  },
+  "ccmm_networking_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:34.212Z"
+  },
+  "ccig_rive_sud_2026": {
+    "ok": false,
+    "code": 0,
+    "checkedAt": "2026-06-12T17:32:35.984Z"
+  },
+  "meq_2026": {
+    "ok": false,
+    "code": 404,
+    "checkedAt": "2026-06-12T17:32:37.769Z"
+  },
+  "cmmtq_2026": {
+    "ok": true,
+    "code": 200,
+    "checkedAt": "2026-06-12T17:32:39.156Z"
+  },
+  "bni_quebec_2026": {
+    "ok": false,
+    "code": 404,
+    "checkedAt": "2026-06-12T17:32:41.113Z"
+  },
+  "pme_mtl_2026": {
+    "ok": false,
+    "code": 404,
+    "checkedAt": "2026-06-12T17:32:42.760Z"
+  }
+}

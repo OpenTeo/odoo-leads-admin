@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "autoQualification": {
+    "enabled": true,
+    "rejectBelowScore": 7
+  },
+  "learning": {
+    "sectorRejectPenaltyThreshold": 2,
+    "sectorRejectPenaltyStep": 0.45,
+    "maxLearnedPenalty": 1.35,
+    "sectorApproveBoostThreshold": 2,
+    "sectorApproveBoostStep": 0.3,
+    "maxLearnedBoost": 0.9,
+    "ruleRejectPenaltyThreshold": 2,
+    "ruleRejectPenaltyStep": 0.35,
+    "ruleApproveBoostThreshold": 2,
+    "ruleApproveBoostStep": 0.2,
+    "recentActionLookbackDays": 7,
+    "recentActionWeightMultiplier": 1.4
+  },
+  "commercialFocus": {
+    "preferredDealMin": 6000,
+    "preferredDealMax": 10000,
+    "repeatableProjectBoost": 0.4,
+    "largeProjectPenalty": 0.4,
+    "microProjectPenalty": 0.15
+  },
+  "sectorRules": [
+    {
+      "id": "architecture",
+      "label": "Architecture / projet",
+      "delta": 1.1,
+      "match": [
+        "architecture",
+        "architecte",
+        "architectes",
+        "design d'espace"
+      ]
+    },
+    {
+      "id": "engineering",
+      "label": "Ingénierie / experts-conseils techniques",
+      "delta": 1.05,
+      "match": [
+        "ingénier",
+        "hvac",
+        "mecan",
+        "électr",
+        "electr",
+        "construction",
+        "chantier",
+        "installation",
+        "experts-conseils",
+        "ingenieur-conseil",
+        "ingenieurs-conseils"
+      ]
+    },
+    {
+      "id": "operations",
+      "label": "Manufacturing / distribution / terrain",
+      "delta": 1.15,
+      "match": [
+        "manufact",
+        "distribution",
+        "grossiste",
+        "logistique",
+        "transport",
+        "inventaire",
+        "portes et fenêtres",
+        "portes et fenetres"
+      ]
+    },
+    {
+      "id": "marketing",
+      "label": "Agence marketing",
+      "delta": -2.65,
+      "match": [
+        "marketing",
+        "seo",
+        "branding",
+        "publicité",
+        "publicite",
+        "social media",
+        "agence web",
+        "agence marketing",
+        "communication",
+        "graphic design",
+        "creative studio",
+        "contenu",
+        "video"
+      ]
+    },
+    {
+      "id": "accounting",
+      "label": "Comptabilité / CPA",
+      "delta": -2.6,
+      "match": [
+        "compt",
+        "cpa",
+        "accounting",
+        "fiscal",
+        "tenue de livres",
+        "bookkeeping"
+      ]
+    },
+    {
+      "id": "generic_services",
+      "label": "Services génériques",
+      "delta": -1.1,
+      "match": [
+        "services",
+        "consultant",
+        "consulting"
+      ]
+    },
+    {
+      "id": "tech",
+      "label": "Tech / software",
+      "delta": -2.2,
+      "match": [
+        "software",
+        "saas",
+        "app development",
+        "web development",
+        "technolog",
+        "it services",
+        "logiciel",
+        "développement",
+        "developpement",
+        "digital product",
+        "informatique",
+        "numerique",
+        "numérique",
+        "data engineering"
+      ]
+    },
+    {
+      "id": "internalizable_tech",
+      "label": "Stack interne forte / forte internalisation",
+      "delta": -1.4,
+      "match": [
+        "cto",
+        "equipe produit",
+        "équipe produit",
+        "equipe technique",
+        "équipe technique",
+        "devops",
+        "ai",
+        "ia",
+        "transformation numerique",
+        "transformation numérique",
+        "innovation",
+        "plateforme",
+        "platform",
+        "produit numerique",
+        "produit numérique"
+      ]
+    }
+  ],
+  "sizeRules": [
+    {
+      "id": "micro",
+      "label": "2-10",
+      "delta": -0.2,
+      "match": [
+        "2-10",
+        "1-10"
+      ]
+    },
+    {
+      "id": "sweet_spot",
+      "label": "11-50",
+      "delta": 0.45,
+      "match": [
+        "11-50",
+        "10-49"
+      ]
+    },
+    {
+      "id": "too_large",
+      "label": "50-249",
+      "delta": -0.9,
+      "match": [
+        "50-249"
+      ]
+    }
+  ],
+  "lastConsolidation": "2026-05-07T03:09:48.290Z"
+}

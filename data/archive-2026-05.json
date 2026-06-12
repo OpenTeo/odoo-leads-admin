@@ -1,0 +1,37 @@
+{
+  "month": "2026-05",
+  "generatedAt": "2026-05-07T03:09:48.290Z",
+  "count": 3,
+  "prospects": {
+    "UPEARANCE_COM": {
+      "decision": "bad_fit",
+      "reason": "generic_services",
+      "note": "Agence marketing / web — hors ICP Odoo PME.",
+      "updatedAt": "2026-05-06T20:24:49.401Z",
+      "archivedAt": "2026-05-07T03:09:48.290Z",
+      "name": "Upearance",
+      "sectorGroup": "Agence marketing / web",
+      "score": 8.2
+    },
+    "SKILLE_CO": {
+      "decision": "bad_fit",
+      "reason": "generic_services",
+      "note": "Agence marketing / web — hors ICP Odoo PME.",
+      "updatedAt": "2026-05-06T20:24:49.402Z",
+      "archivedAt": "2026-05-07T03:09:48.290Z",
+      "name": "Skille",
+      "sectorGroup": "Agence marketing / web",
+      "score": 7.2
+    },
+    "INBEAT_AGENCY": {
+      "decision": "bad_fit",
+      "reason": "generic_services",
+      "note": "Agence marketing / web — hors ICP Odoo PME.",
+      "updatedAt": "2026-05-06T20:24:49.402Z",
+      "archivedAt": "2026-05-07T03:09:48.290Z",
+      "name": "inBeat Agency",
+      "sectorGroup": "Agence marketing / web",
+      "score": 6.1
+    }
+  }
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "category": "Officiel Odoo",
+    "sources": [
+      {
+        "id": "odoo_blog",
+        "title": "Blog Odoo",
+        "description": "Annonces de fonctionnalités, études de cas, roadmap. Lire au moins une fois par semaine.",
+        "url": "https://www.odoo.com/blog",
+        "type": "blog",
+        "language": "EN/FR",
+        "recommended": true,
+        "cadence": "Hebdomadaire"
+      },
+      {
+        "id": "odoo_docs",
+        "title": "Documentation officielle",
+        "description": "Référence complète par module. Indispensable avant chaque démo ou discovery.",
+        "url": "https://www.odoo.com/documentation",
+        "type": "documentation",
+        "language": "EN",
+        "recommended": true,
+        "cadence": "À la demande"
+      },
+      {
+        "id": "odoo_youtube",
+        "title": "Odoo YouTube",
+        "description": "Démos, nouveautés par version, webinaires officiels. Excellent pour voir les modules en action.",
+        "url": "https://www.youtube.com/@Odoo",
+        "type": "video",
+        "language": "EN",
+        "recommended": true,
+        "cadence": "Hebdomadaire"
+      },
+      {
+        "id": "odoo_release_notes",
+        "title": "Notes de version Odoo",
+        "description": "Liste exhaustive des changements à chaque release. Lire après chaque mise à jour majeure.",
+        "url": "https://www.odoo.com/odoo-18-release-notes",
+        "type": "changelog",
+        "language": "EN",
+        "recommended": true,
+        "cadence": "Par release"
+      },
+      {
+        "id": "odoo_elearning",
+        "title": "Odoo eLearning",
+        "description": "Parcours de formation gratuits et certifications officielles Odoo. Idéal pour approfondir un module.",
+        "url": "https://www.odoo.com/slides",
+        "type": "formation",
+        "language": "EN/FR",
+        "recommended": true,
+        "cadence": "En continu"
+      }
+    ]
+  },
+  {
+    "category": "Communauté & Forums",
+    "sources": [
+      {
+        "id": "odoo_forum",
+        "title": "Forum communautaire Odoo",
+        "description": "Questions techniques, bugs, contournements. Chercher avant de démarrer un développement custom.",
+        "url": "https://www.odoo.com/forum",
+        "type": "forum",
+        "language": "EN",
+        "recommended": true,
+        "cadence": "À la demande"
+      },
+      {
+        "id": "oca_github",
+        "title": "OCA — Odoo Community Association",
+        "description": "Modules open source maintenus par la communauté. Souvent plus avancés que les modules natifs sur certains points.",
+        "url": "https://github.com/OCA",
+        "type": "open-source",
+        "language": "EN",
+        "recommended": false,
+        "cadence": "À la demande"
+      },
+      {
+        "id": "odoo_reddit",
+        "title": "r/Odoo",
+        "description": "Discussions informelles, retours terrain de consultants et utilisateurs. Bonne source de signaux faibles.",
+        "url": "https://www.reddit.com/r/Odoo/",
+        "type": "forum",
+        "language": "EN",
+        "recommended": false,
+        "cadence": "Hebdomadaire"
+      }
+    ]
+  },
+  {
+    "category": "Veille ERP & Marché",
+    "sources": [
+      {
+        "id": "g2_odoo",
+        "title": "G2 — Avis Odoo",
+        "description": "Avis clients réels sur Odoo vs concurrents. Utile pour comprendre les objections et points faibles perçus.",
+        "url": "https://www.g2.com/products/odoo/reviews",
+        "type": "avis",
+        "language": "EN",
+        "recommended": true,
+        "cadence": "Mensuel"
+      },
+      {
+        "id": "capterra_odoo",
+        "title": "Capterra — Comparatifs ERP",
+        "description": "Comparatifs Odoo vs SAP Business One, NetSuite, Dynamics 365. Bon pour préparer les objections concurrentielles.",
+        "url": "https://www.capterra.ca/software/139/odoo",
+        "type": "comparatif",
+        "language": "FR",
+        "recommended": true,
+        "cadence": "Mensuel"
+      },
+      {
+        "id": "erp_focus",
+        "title": "SelectHub — Odoo vs concurrents",
+        "description": "Analyses détaillées des fonctionnalités ERP. Utile pour argumenter face à un prospect qui compare.",
+        "url": "https://www.selecthub.com/enterprise-resource-planning/odoo-erp/",
+        "type": "comparatif",
+        "language": "EN",
+        "recommended": false,
+        "cadence": "Trimestriel"
+      }
+    ]
+  },
+  {
+    "category": "Apprentissage Quotidien",
+    "sources": [
+      {
+        "id": "odoo_functional_videos",
+        "title": "Odoo — Playlists officielles YouTube",
+        "description": "Toutes les playlists officielles Odoo par module et version. Aller directement sur la page playlists pour choisir le bon module avant un RDV client.",
+        "url": "https://www.youtube.com/@Odoo/playlists",
+        "type": "video",
+        "language": "EN",
+        "recommended": true,
+        "cadence": "Avant chaque démo"
+      },
+      {
+        "id": "odoo_partner_resources",
+        "title": "Ressources partenaires Odoo",
+        "description": "Matériel officiel de vente, fiches produits, guides d'implémentation. Accès via portal partenaire.",
+        "url": "https://www.odoo.com/partners",
+        "type": "partenaire",
+        "language": "EN/FR",
+        "recommended": true,
+        "cadence": "À la demande"
+      },
+      {
+        "id": "odoo_youtube_channel",
+        "title": "Chaîne Odoo YouTube — Vidéos récentes",
+        "description": "Toutes les vidéos officielles Odoo: démos, webinaires, nouveautés. Filtrer par module pour trouver la bonne démo avant un RDV.",
+        "url": "https://www.youtube.com/@Odoo/videos",
+        "type": "video",
+        "language": "EN",
+        "recommended": true,
+        "cadence": "Avant chaque démo"
+      }
+    ]
+  }
+]

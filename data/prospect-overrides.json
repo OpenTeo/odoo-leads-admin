@@ -1,0 +1,1075 @@
+{
+  "prospects": {
+    "FORT_INTERNATIONAL_COM": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.190Z",
+      "autoRejected": true
+    },
+    "INNOV_AGENCE_SAINTE_BRIGITTE_DE_LAVAL_QC": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-04-19T22:42:29.190Z",
+      "autoRejected": true
+    },
+    "MOMENTUMM_CO": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "WORKSHOP_480_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "OSE_DESIGN_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "PRODUCTIONS_CINA_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "GROWTH_HACKER_CA": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "PRO_ACTIF_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "WEBTMIZE_COM": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "HOUSEOFSOCIALS_COM": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "NOMADE_SOLUTIONS_MOBILES_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: score brut 6.2 < 7.0.",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "ALPHATEK_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "OPTIWEBMARKETING_CA": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "REBORN_MARKETING_INC_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "VGA_APP_DEVELOPERS_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "WEBTONIC_IO": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "ADVANTA_DESIGN_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.1 < 7.0.",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "ZENBOOKS_CA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "PROMERIT_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "LET_S_GET_OPTIMIZED_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "BROWORKS_NET": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "ZIGMA_INTERNET_MARKETING_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "BISSONNETTE_COMMUNICATION_IMPACT_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.191Z",
+      "autoRejected": true
+    },
+    "JDM_CPA_INC_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "TIMING_CPA_INC_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "FIGURE_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "TM_DIGITAL_SAINT_FERDINAND_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "WEBSEO_QUEBEC_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "RMACCOUNTING_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "MYLITTLEBIGWEB_COM": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "UX_FOR_THE_PLANET_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: score brut 6.1 < 7.0.",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "HELPYMEDIA_COM": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "VIVA_DESIGN_L_ANCIENNE_LORETTE_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "DIRECT_OBJECTIVE_CONSULTING_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "UROBORO_WEB_DESIGN_LEVIS_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "TOASTSTUDIO_COM": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "DREWW_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "WEBISTRY_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "BRANDDIGITAL_AGENCY": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "CDID_INC_SAINT_GEORGES_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "KVB_CPA_INC_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "NETLEAF_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "ATELIER_MADE_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "GEORGE_DIMOV_CPA_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "RED_GOAT_DIGITAL_AGENCY_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "BADGER_BLUE": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "CAMELEON_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "EZI_WINE_MARKETING_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "JOEL_MAGGIO_CPA_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "MORAS_CPA_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "ER_ACCOUNTING_SERVICES_DOLLARD_DES_ORMEAUX_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "HORNBEAM_LABS_INC_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "THIRDBRIDGE_CA": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "MONTREAL_FINANCIAL_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "GRIFFIN_BUSINESS_SOLUTIONS_WESTMOUNT_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "HEBERT_TURGEON_CPA_LONGUEUIL_CANADA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "JB_IMPACT_INC_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "MAXIMUMTRAINER_MAX_INC_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "TLM_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "IMPOT_MONTREAL_EN_LIGNE_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "PROGEXPERT_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "L_EFFET_MONSTRE_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.192Z",
+      "autoRejected": true
+    },
+    "LACERTE_COMMUNICATIONS_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "WHITROD_LEDUC_CPA_POINTE_CLAIRE_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "CELLULAIRE_MARKETING_QUEBEC_STONEHAM_ET_TEWKESBURY_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "SOCIALMEDIA55_COM": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "TOUMORO_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "BARDOSH_CA_INCOME_TAX_ACCOUNTING_MONTREAL_CANADA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "PORTER_HETU_INTERNATIONAL_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "ROCKY_GIROUX_CONCEPTION_DE_SITES_WEB_TROIS_RIVIERES_TROIS_RIVIERES_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "BOILY_HANDFIELD_MONTREAL_CANADA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "COURIMO_COM": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "GESTION_TUNG_SING_CPA_INC_MONTREAL_CANADA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "VILLENEUVE_VENNE_MONTREAL_CANADA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "KIWAD_INC_CHATEAU_RICHER_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "PROWEB_SOLUTIONS_VICTORIAVILLE_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "BLOOM_DIGITAL_MARKETING_AGENCY_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "DIGITAD_MONTREAL_CANADA": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "SATGUR_ACCOUNTING_SERVICES_CPA_INC_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "BEAUCHEMIN_TREPANIER_CPA_INC_MONTREAL_CANADA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "DIGIA_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "RABLAB_CA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "VKB_ACCOUNTING_MONTREAL_CANADA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "CODEMARKETING_CA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "IXMEDIA_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "CASAMEDIA_COM": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "RANKWORKS_POINTE_CLAIRE_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "UNIKOM_AGENCE_WEB_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "SHEMIE_CPA_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "TADAM_CREATIVE_STUDIO_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "ACCOUNTOR_CPA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "GRAPH_SYNERGIE_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "BJC_SAINTE_JULIE_CANADA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "CONFISERIE_MONDOUX_INC_1610_PLACE_DE_LIERRE_LAVAL_QC_H7G_4X7": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "FL_FULLER_LANDAU_MONTREAL_CANADA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "TWENTYWESTMEDIA_COM": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "UNIK_MEDIA_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T22:42:29.193Z",
+      "autoRejected": true
+    },
+    "MAGNITUDE_GROUP_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-04-19T22:44:00.753Z",
+      "autoRejected": true
+    },
+    "ACTAIR_CA": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-04-19T23:06:20.378Z",
+      "autoRejected": true
+    },
+    "ASIA_MANUFACTURING_SOLUTI_2013_RUE_CUNARD_CHOMEDEY_QC_H7S_2N1": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 5.8 < 7.0.",
+      "updatedAt": "2026-05-06T20:23:28.471Z",
+      "autoRejected": true
+    },
+    "DIGITALGROWTHCORE_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.8 < 7.0.",
+      "updatedAt": "2026-05-06T20:23:28.472Z",
+      "autoRejected": true
+    },
+    "FALIA_QUEBEC_QC": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.6 < 7.0.",
+      "updatedAt": "2026-05-06T20:23:28.472Z",
+      "autoRejected": true
+    },
+    "RUIZ_AEROSPACE_MANUFACTURING_317_BOUL_SAINT_ELZEAR_O_LAVAL_QC_H7L_3N5": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 5.0 < 7.0.",
+      "updatedAt": "2026-05-06T20:23:28.472Z",
+      "autoRejected": true
+    },
+    "LE_GROUPE_GELINAS_ARCHITECTES_40_DU_PRINCE_ARTHUR_SAINT_LAMBERT_QC_J4P_1X2": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-06T20:23:28.472Z",
+      "autoRejected": true
+    },
+    "ARCHITECTE_MAXIME_BRAULT_1001_RUE_LENOIR_BUREAU_A412A_MONTREAL_QC_H4C_2Z6": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.7 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.745Z",
+      "autoRejected": true
+    },
+    "PROLAD_EXPERTS_INC_624_AV_SAINT_GERMAIN_OUTREMONT_QC_H2V_2V8": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.7 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "ROL_MANUFACTURING_LTD_2205_BOUL_INDUSTRIEL_LAVAL_QC_H7S_1P8": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.6 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "TRIPLE_G_MANUFACTURING_INC_3436_BOUL_INDUSTRIEL_LAVAL_QC_H7L_4R9": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "ATELIER_MGA_MICHEL_GAMACHE_ARCHITECTE_4600_RUE_CLARK_MONTREAL_QC_H2T_2T4": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.8 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "NATHALIE_TREMBLAY_ARCHITECTE_5562_RUE_CLARK_MONTREAL_QC_H2T_2V4": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.7 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "AXYZ_AUTOMATION_1305_BOUL_DAGENAIS_O_LAVAL_QC_H7L_5Z9": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.1 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "LUC_PLANTE_ARCHITECTURE_DESIGN_797_AV_SAINT_CHARLES_SAINT_LAMBERT_QC_J4P_2A2": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.6 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "MCLEAN_ARCHITECTURE_538_AV_WICKHAM_SAINT_LAMBERT_QC_J4R_2B7": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.6 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "BERGERON_THOUIN_440_RUE_NOTRE_DAME_REPENTIGNY_QC_J6A_2T4": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "OASIS_URBAIN_1901_RUE_MASSON_MONTREAL_QC_H2H_1A2": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: score brut 6.9 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "FRANCOIS_GOULET_INGENIEUR_CONSEIL_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.3 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "CIMAISE_395_4000_RUE_SAINT_AMBROISE_MONTREAL_QC_H4C_2C7": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: score brut 6.6 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "HUER_FOODS_INCORPORATED_1380_RUE_NEWTON_BOUCHERVILLE_QC_J4B_5H2": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.6 < 7.0.",
+      "updatedAt": "2026-05-06T20:24:03.746Z",
+      "autoRejected": true
+    },
+    "UPEARANCE_COM": {
+      "decision": "bad_fit",
+      "reason": "generic_services",
+      "note": "Agence marketing / web — hors ICP Odoo PME.",
+      "updatedAt": "2026-05-06T20:24:49.401Z",
+      "archivedAt": "2026-05-07T03:09:48.290Z"
+    },
+    "SKILLE_CO": {
+      "decision": "bad_fit",
+      "reason": "generic_services",
+      "note": "Agence marketing / web — hors ICP Odoo PME.",
+      "updatedAt": "2026-05-06T20:24:49.402Z",
+      "archivedAt": "2026-05-07T03:09:48.290Z"
+    },
+    "INBEAT_AGENCY": {
+      "decision": "bad_fit",
+      "reason": "generic_services",
+      "note": "Agence marketing / web — hors ICP Odoo PME.",
+      "updatedAt": "2026-05-06T20:24:49.402Z",
+      "archivedAt": "2026-05-07T03:09:48.290Z"
+    },
+    "NATHALIE_RICHER_ARCHITECTE_FIRME_LAURENTIDES_QC": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "ALARMERIVESUD_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "CONSTRUCTION_BLAIN_INC_CENTRE_DU_QUEBEC_LANAUDIERE_LAURENTIDES_QC": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "CONSTRUCTION_D_IBERVILLE_INC_LAURENTIDES_LAVAL_MONTREAL_QC": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "DELEEMANSMETAL_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "EMS_ING_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "GPK_CONSTRUCTION_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "LESCONSTRUCTIONSDESPARD_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "ENTRETIENEGI_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "GUARD_X_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.845Z",
+      "autoRejected": true
+    },
+    "ALARMEDOVEN_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "AMCLIMATISATIONCHAUFFAGE_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "APEXFABMTL_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "CLIMCO_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "CONCEPTSOUDUREEXPERT_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "DAMAXAIR_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "LCSOUDURE_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "MACHINAGEGAGNE_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "PRESTIGECLIMATISATION_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "PROREFNORD_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "MCI88_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "SOLUFAB_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "SOUDURE_LL_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "THERMOBEC_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "USINAGEMG_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "MENAGETOTAL_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "MEUBLES_ST_DAMASE_SAINT_DAMASE_MONTEREGIE_QC": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "SOUDURELAVAL_CA": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: score brut 6.5 < 7.0.",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "FIRME_INGETEC_COM": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "MONTREAL_ALARMSEC_CA": {
+      "decision": "rejected",
+      "reason": "generic_services",
+      "note": "Auto-écarté: secteur hors ICP (generic_services).",
+      "updatedAt": "2026-05-14T20:09:42.846Z",
+      "autoRejected": true
+    },
+    "ELEKTRIX_CA": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-05-18T05:25:18.773Z",
+      "autoRejected": true
+    },
+    "VENTILATIONDESMONTS_COM": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-05-18T05:25:18.773Z",
+      "autoRejected": true
+    }
+  }
+}
