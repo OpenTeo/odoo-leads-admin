@@ -1,5 +1,9 @@
 {
   "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/**/*.mjs": { "runtime": "nodejs22.x" }
+  },
   "crons": [
     { "path": "/api/cron/refresh-news", "schedule": "0 12 * * 1" },
     { "path": "/api/cron/refresh-events", "schedule": "30 12 * * 1" }
