@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-12T17:31:21.608Z",
+  "fetchedAt": "2026-06-13T01:13:36.465Z",
   "items": [
     {
       "title": "Fable 5 is incredible with Odoo",
@@ -16,10 +16,17 @@
       "source": "reddit"
     },
     {
-      "title": "Customer Support Analyst Belgium",
-      "link": "https://www.reddit.com/r/Odoo/comments/1u3xvo6/customer_support_analyst_belgium/",
-      "desc": "Hi Has anyone recently applied to that function in Belgium? Have you already had the long meeting with the team and the test? Can you say how it went and what was discussed during this interview? submitted by /u/Material",
-      "pubDate": "2026-06-12T15:05:57+00:00",
+      "title": "European Union's (EU) right of withdrawal (EU Directive 2023/2673)",
+      "link": "https://www.reddit.com/r/Odoo/comments/1u47872/european_unions_eu_right_of_withdrawal_eu/",
+      "desc": "How is everyone (anyone?) handling the right of withdrawal directive that I believe is going live on 6/19. We are in the US and just heard about this. According to Odoo support: To fully comply with EU regulations regard",
+      "pubDate": "2026-06-12T20:50:04+00:00",
+      "source": "reddit"
+    },
+    {
+      "title": "¿Qué campos debería devolver Odoo al crear registros vía API? ¿Existe algún estándar?",
+      "link": "https://www.reddit.com/r/Odoo/comments/1u43wc2/qué_campos_debería_devolver_odoo_al_crear/",
+      "desc": "Estoy desarrollando una API REST para Odoo que permite crear múltiples registros en varios modelos en una sola llamada. Ejemplo real del body: json { \"product.category\": [ { \"name\": \"Categoría A\" }, { \"name\": \"Categoría ",
+      "pubDate": "2026-06-12T18:41:56+00:00",
       "source": "reddit"
     },
     {
@@ -30,17 +37,10 @@
       "source": "reddit"
     },
     {
-      "title": "Odoo eLearning App vs LMS Integration – Looking for Experiences",
-      "link": "https://www.reddit.com/r/Odoo/comments/1u3v92v/odoo_elearning_app_vs_lms_integration_looking_for/",
-      "desc": "Hi everyone, We're currently using an LMS, but we're exploring the possibility of moving towards a more integrated setup with Odoo. (using odoo for finance and sales already) Our goal is to have one unified system instea",
-      "pubDate": "2026-06-12T13:26:33+00:00",
-      "source": "reddit"
-    },
-    {
-      "title": "Claude Fable on Odoo.sh AI Agent?",
-      "link": "https://www.reddit.com/r/Odoo/comments/1u3rq92/claude_fable_on_odoosh_ai_agent/",
-      "desc": "Hi, Has anyone figured out how to change the model in Odoo.sh AI agent (under development branch) to Claude Fable? The best model I can select is Optus. Tried to run “Claude update” in the terminal but it doesn’t work. s",
-      "pubDate": "2026-06-12T10:41:31+00:00",
+      "title": "Customer Support Analyst Belgium",
+      "link": "https://www.reddit.com/r/Odoo/comments/1u3xvo6/customer_support_analyst_belgium/",
+      "desc": "Hi Has anyone recently applied to that function in Belgium? Have you already had the long meeting with the team and the test? Can you say how it went and what was discussed during this interview? submitted by /u/Material",
+      "pubDate": "2026-06-12T15:05:57+00:00",
       "source": "reddit"
     }
   ]

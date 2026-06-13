@@ -1070,6 +1070,97 @@
       "note": "Auto-écarté: secteur hors ICP (too_tech).",
       "updatedAt": "2026-05-18T05:25:18.773Z",
       "autoRejected": true
+    },
+    "INDUKTION_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.7 < 7.0.",
+      "updatedAt": "2026-06-12T23:27:50.607Z",
+      "autoRejected": true
+    },
+    "CAFENAPOLEON_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.7 < 7.0.",
+      "updatedAt": "2026-06-12T23:27:50.609Z",
+      "autoRejected": true
+    },
+    "RALIK_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-06-12T23:27:50.609Z",
+      "autoRejected": true
+    },
+    "SAINTHENRI_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-06-12T23:27:50.609Z",
+      "autoRejected": true
+    },
+    "ENVIRO_EXPERTS_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.7 < 7.0.",
+      "updatedAt": "2026-06-12T23:27:50.609Z",
+      "autoRejected": true
+    },
+    "STORCAN_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-06-12T23:27:50.609Z",
+      "autoRejected": true
+    },
+    "MACCHIINC_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 4.7 < 7.0.",
+      "updatedAt": "2026-06-12T23:27:50.609Z",
+      "autoRejected": true
+    },
+    "PRODULITH_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 5.3 < 7.0.",
+      "updatedAt": "2026-06-12T23:27:50.609Z",
+      "autoRejected": true
+    },
+    "LOCATIONOUTILSMS_COM": {
+      "decision": "rejected",
+      "reason": "too_tech",
+      "note": "Auto-écarté: secteur hors ICP (too_tech).",
+      "updatedAt": "2026-06-12T23:27:50.610Z",
+      "autoRejected": true
+    },
+    "MLCASSOCIES_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.7 < 7.0.",
+      "updatedAt": "2026-06-13T00:39:24.254Z",
+      "autoRejected": true
+    },
+    "HFEC_ING_COM": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 6.0 < 7.0.",
+      "updatedAt": "2026-06-13T00:39:24.255Z",
+      "autoRejected": true
+    },
+    "ACEMA_CA": {
+      "decision": "rejected",
+      "reason": "low_fit",
+      "note": "Auto-écarté: score brut 4.7 < 7.0.",
+      "updatedAt": "2026-06-13T00:39:24.255Z",
+      "autoRejected": true
+    },
+    "MILIBEC_COM": {
+      "decision": "rejected",
+      "reason": "accounting",
+      "note": "Auto-écarté: secteur hors ICP (accounting).",
+      "updatedAt": "2026-06-13T00:39:24.255Z",
+      "autoRejected": true
     }
   }
 }
