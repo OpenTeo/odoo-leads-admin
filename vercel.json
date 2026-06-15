@@ -2,6 +2,8 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "crons": [
+    { "path": "/api/cron/generate-prospects", "schedule": "0 12 * * 1" },
+    { "path": "/api/cron/send-leads", "schedule": "0 13 * * 1" },
     { "path": "/api/cron/refresh-news", "schedule": "0 12 * * 1" },
     { "path": "/api/cron/refresh-events", "schedule": "30 12 * * 1" }
   ]

@@ -1,46 +1,46 @@
 {
-  "fetchedAt": "2026-06-13T01:13:36.465Z",
+  "fetchedAt": "2026-06-15T05:31:22.424Z",
   "items": [
+    {
+      "title": "Link payment with invoice",
+      "link": "https://www.reddit.com/r/Odoo/comments/1u65axf/link_payment_with_invoice/",
+      "desc": "Problem: From Customers/Invoices, create an invoice (INV/2026/00001) From Customers/Payments, create a payment with memo INV/2026/00001 The payment is not linked to the invoice. If you create the payment from the invoice",
+      "pubDate": "2026-06-15T03:35:37+00:00",
+      "source": "reddit"
+    },
+    {
+      "title": "Inventory/Product question",
+      "link": "https://www.reddit.com/r/Odoo/comments/1u5sp34/inventoryproduct_question/",
+      "desc": "Hi I am wondering if I will be able to setup this data model in Odoo in the inventory app. &#x200B; I build and sell products that are made of multiple components. The components are serialized and unserialized both. &#x",
+      "pubDate": "2026-06-14T18:27:00+00:00",
+      "source": "reddit"
+    },
+    {
+      "title": "How to disable editing of a model record",
+      "link": "https://www.reddit.com/r/Odoo/comments/1u5jc9v/how_to_disable_editing_of_a_model_record/",
+      "desc": "Hi, I want to find out the best way to implement this: A button or Y or N field in a model's form view. Only manager can change this field. Once manager change it to Yes, the editing of the form is disabled for other non",
+      "pubDate": "2026-06-14T12:02:14+00:00",
+      "source": "reddit"
+    },
+    {
+      "title": "Building odoo with AI",
+      "link": "https://www.reddit.com/r/Odoo/comments/1u5aazu/building_odoo_with_ai/",
+      "desc": "I have been building a system with a few custom modules with Claude and everything works to 100%. When there’s bugs we go over it together and I make sure the fix explanation and the code makes sense in general , I have ",
+      "pubDate": "2026-06-14T03:34:25+00:00",
+      "source": "reddit"
+    },
+    {
+      "title": "Call external API when record is changed - best approach",
+      "link": "https://www.reddit.com/r/Odoo/comments/1u4q1rs/call_external_api_when_record_is_changed_best/",
+      "desc": "I have a situation where I'd like my Odoo server (self hosted enterprise) to call an external API (via a REST invocation) whenever a record is changed / added in a model (say Contacts). What is the best / easiest approac",
+      "pubDate": "2026-06-13T12:45:05+00:00",
+      "source": "reddit"
+    },
     {
       "title": "Fable 5 is incredible with Odoo",
       "link": "https://www.reddit.com/r/Odoo/comments/1u3o40l/fable_5_is_incredible_with_odoo/",
       "desc": "Ive been a full stack developer for the last 12 or so years. and im guessing im not alone in saying AI has been slowly reducing my work strain to a slow drip. I currently manage my own odoo instance on V18 that is heavil",
       "pubDate": "2026-06-12T07:09:34+00:00",
-      "source": "reddit"
-    },
-    {
-      "title": "Does everyone on here mostly use odoo.sh",
-      "link": "https://www.reddit.com/r/Odoo/comments/1u3tsy7/does_everyone_on_here_mostly_use_odoosh/",
-      "desc": "Hi everyone, My small business is moving to Odoo Enterprise. Functionally, it fits our needs perfectly. We are currently searching for an Odoo Partner/Provider to help us implement the system, but I want to make an infor",
-      "pubDate": "2026-06-12T12:25:04+00:00",
-      "source": "reddit"
-    },
-    {
-      "title": "European Union's (EU) right of withdrawal (EU Directive 2023/2673)",
-      "link": "https://www.reddit.com/r/Odoo/comments/1u47872/european_unions_eu_right_of_withdrawal_eu/",
-      "desc": "How is everyone (anyone?) handling the right of withdrawal directive that I believe is going live on 6/19. We are in the US and just heard about this. According to Odoo support: To fully comply with EU regulations regard",
-      "pubDate": "2026-06-12T20:50:04+00:00",
-      "source": "reddit"
-    },
-    {
-      "title": "¿Qué campos debería devolver Odoo al crear registros vía API? ¿Existe algún estándar?",
-      "link": "https://www.reddit.com/r/Odoo/comments/1u43wc2/qué_campos_debería_devolver_odoo_al_crear/",
-      "desc": "Estoy desarrollando una API REST para Odoo que permite crear múltiples registros en varios modelos en una sola llamada. Ejemplo real del body: json { \"product.category\": [ { \"name\": \"Categoría A\" }, { \"name\": \"Categoría ",
-      "pubDate": "2026-06-12T18:41:56+00:00",
-      "source": "reddit"
-    },
-    {
-      "title": "Odoo CDN",
-      "link": "https://www.reddit.com/r/Odoo/comments/1u3y8sf/odoo_cdn/",
-      "desc": "Alguien ha podido configurar cloudflare cdn para los assets en odoo 18? estoy usando enterprise on-premise pero no logro encontrar documentación suficiente, tengo mi dominio y subdominios en godaddy, solo quiero en odoo ",
-      "pubDate": "2026-06-12T15:19:07+00:00",
-      "source": "reddit"
-    },
-    {
-      "title": "Customer Support Analyst Belgium",
-      "link": "https://www.reddit.com/r/Odoo/comments/1u3xvo6/customer_support_analyst_belgium/",
-      "desc": "Hi Has anyone recently applied to that function in Belgium? Have you already had the long meeting with the team and the test? Can you say how it went and what was discussed during this interview? submitted by /u/Material",
-      "pubDate": "2026-06-12T15:05:57+00:00",
       "source": "reddit"
     }
   ]
