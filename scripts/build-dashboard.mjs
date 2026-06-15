@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { collectDashboardData, distPath, publicPath, veilleNewsCachePath } from "../lib/dashboard-data.mjs";
+import { distPath, publicPath, veilleNewsCachePath } from "../lib/dashboard-data.mjs";
 import { buildHtml } from "../lib/dashboard-template.mjs";
 
 const ODOO_BLOG_RSS_URL = "https://www.odoo.com/blog/all-1/rss";
@@ -81,7 +81,28 @@ async function refreshNewsCache() {
 
 await refreshNewsCache();
 
-const html = buildHtml(collectDashboardData());
+// Ne pas cuire les prospects dans le HTML — l'API /api/dashboard-data les charge au runtime
+const html = buildHtml({
+  generatedAt: null,
+  mode: "static",
+  prospects: [],
+  batches: [],
+  pipeline: { activeCount: 0, cap: 0, reserveCount: 0, nextRefillDate: null },
+  automations: [],
+  events: [],
+  playbooks: [],
+  veille: [],
+  partners: [],
+  monthlyState: null,
+  eventSummary: null,
+  metrics: null,
+  duplicatesRemoved: 0,
+  sourcingContext: [],
+  learning: null,
+  preferences: {},
+  paths: {},
+  renderSummaryMarkup: null
+});
 fs.mkdirSync(path.dirname(distPath), { recursive: true });
 fs.writeFileSync(distPath, html, "utf8");
 fs.mkdirSync(path.dirname(publicPath), { recursive: true });
